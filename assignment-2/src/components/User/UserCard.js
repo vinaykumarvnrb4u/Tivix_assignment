@@ -23,7 +23,16 @@ const UserCard = ({ user }) => {
     return (<div style={{ padding: '2%' }}>
         <Paper className={classes.root}>
             <Typography variant="h5" component="h3">
-              Name : { user.name}
+                Name : {user.name}
+            </Typography>
+            <Typography variant="h5" component="h3">
+                Username : {user.username}
+            </Typography>
+            <Typography variant="h5" component="h3">
+                Email : {user.email}
+            </Typography>
+            <Typography variant="h5" component="h3">
+                City : {user.address.city}
             </Typography>
         </Paper>
     </div >
@@ -31,23 +40,3 @@ const UserCard = ({ user }) => {
 }
 
 export default UserCard
-
-// {
-//     "id": 3,
-//     "name": "Clementine Bauch",
-//     "username": "Samantha",
-//     "email": "Nathan@yesenia.net",
-//     "address": {
-//       "street": "Douglas Extension",
-//       "suite": "Suite 847",
-//       "city": "McKenziehaven",
-//       "zipcode": "59590-4157",
-//     },
-//     "phone": "1-463-123-4447",
-//     "website": "ramiro.info",
-//     "company": {
-//       "name": "Romaguera-Jacobson",
-//       "catchPhrase": "Face to face bifurcated interface",
-//       "bs": "e-enable strategic applications"
-//     }
-//   }

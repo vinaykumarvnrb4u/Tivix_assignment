@@ -1,5 +1,7 @@
 # Assignment-1 :  Data tracker app that keeps track of min, max, mean, and mode values
 
+# Brief Description: Here I'm consuming the given APIs data and showing it in the front-end. But it was facing some CORS issue, so on final setup used hard coded data. Then implemented the min, max, mean and mode of all the provided temperatures.
+
 # Below are the commands to run assignment 1
 
 1.  cd assignment-1

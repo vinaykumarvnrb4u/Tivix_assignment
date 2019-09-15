@@ -26,7 +26,7 @@ deselectUser = ()=>{
 render(){
     const { userIds, selectedUserId } = this.state;
     const users = userIds.map( userId => {
-        return <div key={userId}><Button variant="contained" color="primary" onClick={this.selectUser(userId)} style={{margin:'5px'}}>{userId}</Button></div>
+        return <div key={userId}><Button variant="contained" color="primary" onClick={this.selectUser(userId)} style={{margin:'5px'}}>{"User ID : "+userId}</Button></div>
     })
     return selectedUserId ? <User user_id={selectedUserId} back={this.deselectUser} /> : users
 }

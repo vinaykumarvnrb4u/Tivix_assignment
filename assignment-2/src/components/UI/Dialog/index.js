@@ -27,8 +27,6 @@ export default function FormDialog(props) {
   }
 
   const handleSubmit =()=>{
-   // console.log("Heyyyyyy");
-    
     setOpen(false);
     setForm({});
     props.add(dynamicForm);
@@ -63,14 +61,16 @@ export default function FormDialog(props) {
                     validators={field.validators}
                     errorMessages={field.errorMessages}
                     /> :
-                    <CheckboxValidatorElement
+                    (<div style={{ margin: '10px' }}><span>{field.label}</span>
+                     <CheckboxValidatorElement
                       key={field.id}
                       label={field.label}
                       value={dynamicForm[field.name]}
                       onChange={handleChange(field.name)}
                       name={field.name}
                       checked={dynamicForm[field.name]} 
-                />}</div>
+                      labelPlacement="end"
+                    /></div>)}</div>
                 })
             }
         </DialogContent>
