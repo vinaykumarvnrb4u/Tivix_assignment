@@ -18,7 +18,7 @@ Weather API's were throwing CORS error. So i used constant data (same api format
 
 
 ### Assignment-2 : App that keeps track of posts and todos for user-id : 1,3,5
-For each user posts and todos can be viewed as well as added.
+Posts and todos can be viewed as well as added for each user.
 Functionality to find the todos and posts with minimum and maximum title length is also implemented.
 Adding a new todos and posts for a particular user is implemented.
 
