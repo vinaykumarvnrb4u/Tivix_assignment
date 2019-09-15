@@ -84,7 +84,6 @@ export default function SnackbarMsg(props) {
   const [open, setOpen] = React.useState(openSnack);
 
   useEffect(()=>{
-    console.log("Snack --> ",openSnack) 
      setOpen(openSnack)
   },[openSnack]);
 
