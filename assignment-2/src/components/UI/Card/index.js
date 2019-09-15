@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 export default function SimpleCard(props) {
   const classes = useStyles();
   return (
-    <Card className={classes.card} style={{backgroundColor: (props.completed == "true" || props.completed == "false" || props.completed) && JSON.parse(props.completed) && '#a6f065' }}>
+    <Card className={classes.card} style={{backgroundColor: props.completed && '#a6f065' }}>
       <CardContent>
         <Typography className={classes.title} color="textSecondary" style={{background:"beige"}} gutterBottom>
           { props.title }
